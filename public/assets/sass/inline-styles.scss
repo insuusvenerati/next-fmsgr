@@ -1,0 +1,289 @@
+$flu-color: #800080;
+$footer-light: #333333;
+$footer-dark: #292929;
+
+
+.hoverable:hover {
+  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0); 
+box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+transition: 350ms ease-in-out;
+}
+
+.header-min-height {
+  height: calc(50vh - 160px);
+}
+
+
+/*********************
+**Custom Backgrounds**
+**********************/
+
+.bg-beige {
+  background-color: #f6efd3 !important;
+}
+
+.footer-light {
+  background-color: $footer-light
+}
+
+.footer-dark {
+  background-color: $footer-dark;
+}
+/*********************
+**Custom Link Styles**
+**********************/
+
+.link-color {
+  background-color: #fff !important;
+  border: none !important;
+  color: #664994 !important;
+  padding: 0 !important;
+  transition: 250ms ease-in-out !important;
+}
+
+.link-color:hover,
+.link-color:active,
+.link-color:focus {
+  color: #664971 !important;
+  text-decoration: none !important;
+}
+
+.link-color:focus {
+  box-shadow: initial !important;
+  text-decoration: none !important;
+}
+
+.red  {
+  display: block;
+  color: #ff0000;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.white {
+  color: #fff;
+}
+
+
+// li.nav-item:hover {
+//   border-top: 3px solid #7cc1de !important;
+// } 
+
+li.nav-item {
+  position: relative !important;
+}
+
+#first-li {
+  border-left: 1px solid rgba(0,0,0,0.125) !important;
+  border-top:  1px solid rgba(0,0,0,0.125) !important;
+}
+
+#last-li {
+  border-right: 1px solid rgba(0,0,0,0.125) !important;
+}
+
+li.nav-item::before {
+  background-color:  #7cc1de;
+  content: '';
+  display: block;
+  height: 4px;
+  left: 0;
+  margin: 0 !important;
+  opacity: 0;
+  padding: 0 !important;
+  position: absolute;
+  top: -4px;
+  transition: 400ms ease-in-out;
+  width: 100% !important;
+}
+
+li.nav-item:hover::before {
+  opacity: 1 !important;
+}
+
+li.custom-active::before {
+  opacity: 1 !important;
+}
+
+.img-fig {
+  max-height: 375px !important;
+  width: auto !important;
+}
+
+.img-450 {
+  min-height: 450px !important;
+}
+
+.carousel-item > .img-fluid {
+ width: 100%;
+}
+
+
+
+/********************
+**Custom Typography**
+*********************/
+
+section,
+article,
+header,
+footer,
+p,
+span {
+  font-size: 1.1em;
+}
+
+.alert-text {
+  color: red;
+  font-weight: bold;
+}
+
+.flu-text {
+  color: $flu-color;
+  line-height: 1.5;
+  font-weight: bolder;
+}
+
+
+.desktop-spacer {
+  min-height: 10vh;
+}
+
+.light-blue {
+  color: #664971;
+}
+
+.footer-lg-contact {
+  color: #888;
+  display: block;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 7px;
+  width: 100%;
+}
+
+#carouselContainer {
+  display: none;
+}
+
+.navbar-collapse {
+  transition: 250ms ease-in-out;
+}
+
+.patient-centered {
+  color: #0000ff;
+  font-size: 1.3em;
+  font-weight: 900;
+}
+
+.resource-header {
+  color: #3366ff;
+  font-weight: 600;
+  font-size: 3em;
+}
+
+.fas,
+.far {
+  background-color:  #f6efd3;
+  color: #26c89c;
+  transition: 350ms ease-in-out;
+}
+
+.fas:hover,
+.far:hover {
+transform: scale(1.1);
+}
+
+.scale {
+  transition: 350ms ease-in-out;
+}
+
+.scale:hover {
+  transform: scale(1.05);
+}
+
+.ruler::after {
+  background-color:  #999;
+  color: #000;
+  content: '';
+  clear: both;
+  display: block;
+  height: 1px;
+  margin: 1em auto;
+  padding: 0;
+  width: 90%;
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 499px) {
+
+  
+
+
+  .desktop-spacer {
+    min-height: 35vh;
+  }
+
+  
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 768px) {
+
+
+  .desktop-spacer {
+    min-height: 25vh;
+  }
+
+  .max-characters {
+    margin: 2em auto;
+    max-width: 60ch;
+    text-align: left;
+  }
+
+  #carouselContainer {
+    display: block;
+  }
+
+  .carousel-item > .img-fluid {
+    height: 500px;
+    width: 100%;
+   }
+
+   .hide-on-large {
+    display: none;
+  }
+
+
+
+}
+
+@media screen and (min-width: 992px) {
+  #first-li {
+    border-left: 0 !important;
+    border-top:  0 !important;
+  }
+  
+  #last-li {
+    border-right: 0 !important;
+  }
+
+  .padding-left-large {
+    padding-left: 3em;
+  }
+}
+

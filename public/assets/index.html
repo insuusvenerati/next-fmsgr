@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="At Family Medicine Specialists we strive to meet your individual and unique healthcare needs. Our team is made up of doctors, physician assistants/nurse practitioners, nurses, medical assistants and administrative personnel who work for you. We embrace the Patient-Centered Medical Home model of care.">
+    <meta name="author" content="Andrew M McCall">
+    <title>Family Medicine Specialists - Grand Rapids Michigan</title>
+    <link rel="author" href="https://andrew-mccall.com">
+    <link rel="prefetch" href="https://cdnjs.cloudflare.com">
+    <link rel="prefetch" href="https://api.mapbox.com">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/inline-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css' rel='stylesheet' /> <!-- mapbox -->
+</head>
+
+<body>
+    <div class="container-fluid mx-auto p-0 bg-white">
+        <!-- Top Nav Area -->
+        <div class="row w-100 mx-auto mb-1">
+            <div class="col-12">
+                <!-- .logo -->
+                <div class="container text-center bg-white my-4">
+                    <a id="logo" href="/" class="text-decoration-none" title="Family Medicine Specialists, PC"><img
+                            class="img-fluid mx-auto d-block" src="./header-logo.jpg"
+                            alt="Family Medicine Specialist Logo" /></a>
+                </div>
+                <div class="border-top mb-0"></div>
+                    <nav id="menu" class="navbar navbar-expand-lg navbar-light container text-center mt-0">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon my-2"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse h-100 mt-n2" id="navbarNavDropdown">
+                            <ul id="menu"
+                                class="navbar-nav nav list-group list-group-horizontal-lg border-top-0 mx-auto justify-content-center">
+                                <li id="first-li" class="nav-item list-group-item border-top-0 border-left-0"><a href="/"
+                                        class="text-decoration-none p-3"><span>Home</span></a></li>
+                                <li class="nav-item list-group-item border-top-0">
+                                    <div class="dropdown">
+                                        <a class="btn btn-secondary dropdown-toggle bg-beige link-color text-decoration-none p-3"
+                                            href="" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                                            aria-haspopup="true" aria-expanded="false">
+                                            Providers
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                            <a href="/providers/"
+                                                class="dropdown-item text-decoration-none"><span>Providers</span></a>
+                                            <a href="/case-manager/"
+                                                class="dropdown-item text-decoration-none"><span>Care Manager</span></a>
+
+                                        </div> <!-- end dropdown menu cont-->
+                                    </div> <!-- end dropdown-->
+
+                                </li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/patient-education/"><span>Patient Education</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/category/the-health-hub/"><span>The Health Hub</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/news/"><span>News</span></a></li>
+                                <li class="nav-item list-group-item border-top-0 "><a class="text-decoration-none"
+                                        href="/forms/"><span>Forms</span></a></li>
+                                <li id="last-li" class="nav-item list-group-item border-top-0 border-right-0"><a class="text-decoration-none"
+                                        href="/contact-us/"><span>Contact Us</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav><a class="responsive-menu-toggle" href="#"><i class="icon-menu"></i></a>
+                </div>
+            </div> <!-- end header col-->
+        </div> <!-- end row -->
+        <!-- Carousel -->
+        <div id="carouselContainer" class="row w-100 mx-auto">
+            <!--carousel row -->
+            <div class="mx-auto">
+                <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img src="assets/images/home-pic-main.jpg" class="img-fluid"
+                                alt="family medicine specialists office building">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="./assets/images/slide1.png" class="img-fluid" alt="nurse">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img src="./assets/images/slide3.png" class="img-fluid" alt="receptionist">
+                        </div>
+                        <div class="carousel-item" data-interal="3000">
+                            <img src="./assets/images/slide4.png" class="img-fluid" alt="slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div> <!-- end col -->
+
+        </div> <!-- end carousel row-->
+        <!-- daily covid updates-->
+        <div class="row w-100 mx-auto bg-beige ruler">
+            <div class="container">
+                <div class="row w-100-mx-auto-bg-white">
+                    <div class="col-lg">
+                        <header class="text-center my-4">
+                            <h2>COVID-19 is a rapidly evolving situation.</h2>
+                            <span>Please refer to the Kent County Health Department for the most up to date information
+                                at
+                                <a href="https://www.accesskent.com/Health/coronavirus.htm"
+                                    target="_blank">www.accesskent.com/coronavirus</a>(And yes, you can trust this
+                                source!)</span>
+                        </header>
+                    </div>
+                </div>
+                <div class="row w-100 mx-auto bg-beige">
+                    <div class="container">
+                        <article class="text-left mx-auto pb-5">
+                            <section>
+                                <header class="text-center my-4">
+                                    <h3>Update as of 11/3/2020:</h3>
+                                </header>
+                                <p>Cases in Kent County are increasing rapidly. We must act now to reduce the spread of
+                                    this virus. Here are some things that you can do to keep yourself safe and to help
+                                    stop the spread of COVID-19:</p>
+                                <ul class="list-group pl-2">
+                                    <li class="">Wear a face mask any time you are outside your home (over your
+                                        mouth AND nose!)</li>
+                                    <li class="">Physically distance yourself at least 6 feet from other persons
+                                        outside your home</li>
+                                    <li class="">Wash your hands frequently with soap and water for 20 seconds or
+                                        use alcohol-based hand sanitizer </li>
+                                    <li class="">Try to avoid touching your face – especially your eyes, nose, and
+                                        mouth</li>
+                                    <li class="">Disinfect “high touch” areas in your home and car regularly with a
+                                        disinfectant wipe or cleaning solution</li>
+                                    <li class="">Get plenty of rest, eat well, and generally take care of yourself!!
+                                    </li>
+                                    <li class="">Avoid gatherings with people outside of your immediate household
+                                        members, especially indoors and especially with large groups. Wear a mask if you
+                                        do need to attend.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <header class="text-center my-4">
+                                    <h4>Testing</h4>
+                                </header>
+                                <p>COVID-19 testing is widely available and anyone who wants a test can have a test.
+                                    Unfortunately, with the rapid increase in cases, you may have to wait in line to be
+                                    tested. Plan ahead. Time to get results varies, but is generally 24-72 hours.</p>
+                                <p>How to find a testing site:</p>
+                                <ul class="list-group pl-5">
+                                    <li>Mercy Health Saint Mary’s Southwest Campus has a drive thru testing site that
+                                        does NOT need a doctors order – first come, first serve.
+                                        <ul class="list-group pl-2">
+                                            <li>Current hours are 7am-7pm M-F and 7am-3pm on Saturday. These are subject
+                                                to change and they may close early due to high demand.
+                                            </li>
+                                            <li>Address is 2373 64th St SW, Byron Center, MI 49315</li>
+                                        </ul>
+                                    </li>
+                                    <li>During regular business hours, you can contact our office for an order to be
+                                        tested through Saint Mary’s or Spectrum Health by appointment.</li>
+                                    <li><a href="www.accesskent.com/Health/covid-19-testing.htm"
+                                            target="_blank">www.accesskent.com/Health/covid-19-testing.htm</a>
+                                        <ul>
+                                            <li>Listing of all testing sites in the greater Grand Rapids area, including
+                                                hospitals, pharmacies, urgent care, and other sites </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.michigan.gov/cornavirus"
+                                            target="_blank">www.michigan.gov/cornavirus </a> Click on “find a test site”
+                                        <ul>
+                                            <li>Listing of all testing sites in the state, including hospitals,
+                                                pharmacies, urgent care, and other testing sites</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.spectrumhealth.org/covid19"
+                                            target="_blank">www.spectrumhealth.org/covid19</a> You can schedule yourself
+                                        a test at Spectrum Health through their COVID19 screeners by using Spectrum
+                                        MyChart </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <header class="text-center my-4">
+                                    <h4>Quarantine:</h4>
+                                </header>
+                                <p>Persons who have had direct (“first degree”) exposure to a person positive for
+                                    COVID19 should quarantine for 14 days after the last known exposure.</p>
+                                <ul class="list-group pl-2">
+                                    <li>The incubation period for COVID19 is anywhere between 2 and 14 days. This means
+                                        symptoms could show up anywhere between 2 and 14 days from when you are exposed.
+                                    </li>
+                                    <li>While we do highly recommend testing for exposed persons, you need to be careful
+                                        to not get tested too early and get a “false negative”. </li>
+                                    <li><strong>Please wait at least 5 days after the exposure to get tested for
+                                            COVID19.</strong></li>
+                                    <li>If you do start getting symptoms at any point during the quarantine period, get
+                                        testing immediately. There is no need to wait further. </li>
+                                    <li>Remember that even with a negative test, you are not “safe” and need to
+                                        quarantine until the 14 days has passed.</li>
+                                    <li>For more information please feel free to call our office, or see the following
+                                        websites:
+                                        <ul>
+                                            <li><a href="https://www.accesskent.com/Health/covid-19-faq.htm"
+                                                    targert="_blank">https://www.accesskent.com/Health/covid-19-faq.htm</a>
+                                            </li>
+                                            <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html "
+                                                    target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html
+                                                </a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <header class="text-center my-4">
+                                    <h4>If You Are Sick:</h4>
+                                </header>
+                                <p>If you are sick and suspect you may have COVID19 it is very important to get tested.
+                                    Please call our office and talk to our nurses regarding your symptoms.</p>
+                                <p><strong>We do offer Telehealth appointments so you do not need to leave your home to
+                                        be seen.</strong></p>
+                                <p>If you are very short of breath or have other life-threatening symptoms please call
+                                    911 or go to the nearest Emergency Department. COVID19 can get worse rapidly, so
+                                    don’t wait to seek care.</p>
+                                <ul class="list-group pl-2">
+                                    <li>Persons sick with COVID19 or suspected COVID19 need to self-isolate in their
+                                        homes until:
+                                        <ul>
+                                            <li>10 days since onset of symptoms AND</li>
+                                            <li>at least 24 hours with no fever (without medication) AND</li>
+                                            <li>improvement in other symptoms (such as cough, congestion, shortness of
+                                                breath) </li>
+                                        </ul>
+                                    </li>
+                                    <li>Note that loss of taste/smell can linger for weeks, you do not need to continue
+                                        to isolate for these symptoms as long as the other criteria are met</li>
+                                    <li>What does self-isolation mean?
+                                        <ul>
+                                            <li>Stay in a separate room in your home from other family members. Sleep in
+                                                a separate bedroom and use a different bathroom, if possible ◦ If you
+                                                must be around other members of your household, wear a face mask at all
+                                                times</li>
+                                            <li>Avoid direct contact with pets, if possible</li>
+                                            <li>Do not share items such as eating utensils, drinking glasses, or towels
+                                            </li>
+                                            <li>Disinfect commonly touched surfaces (such as doorknobs) frequently</li>
+                                            <li>Wash your hands frequently, especially after coughing/sneezing or
+                                                touching your face</li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html"
+                                            target="_blank">https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html</a>
+                                    </li>
+                                </ul>
+                                <p>COVID-19 has proven to be a different experience for everyone, but common symptoms
+                                    include:</p>
+                                <ul class="list-group pl-2">
+                                    <li>Fever (>100.4) or chills</li>
+                                    <li>Body aches, headache</li>
+                                    <li>Sore throat, congestion, runny nose</li>
+                                    <li>Loss or change in sense of taste or smell</li>
+                                    <li>Nausea, vomiting, or diarrhea</li>
+                                </ul>
+                                <footer>
+                                    <p>If you have any of these symptoms, please get testing.</p>
+                                </footer>
+                            </section>
+                            <section>
+                                <header class="text-center my-4">
+                                    <h4>ASYMPTOMATIC PERSONS TESTING POSITIVE FOR COVID-19</h4>
+                                </header>
+                                <p>If you don’t have any symptoms but tested positive, you must self-isolate for 10 days
+                                    from your positive test. Just because you don’t have symptoms does NOT mean you
+                                    can’t spread the virus.</p>
+                            </section>
+                            <section>
+                                <header class="text-center my-4">
+                                    <h4>Resources For FAQs:</h4>
+                                </header>
+                                <ul>
+                                    <li><a href="http://www.accesskent.com/Health/coronavirus.htm" target="_blank">Kent
+                                            County Health Dept</a></li>
+                                    <li><a href="http://www.cdc.gov/coronavirus/2019-nCoV/index.html"
+                                            target="_blank">CDC</a></li>
+                                    <li><a href="http://www.michigan.gov/coranvirus" target="_blank">State Of
+                                            Michigan</a></li>
+                                    <li><a href="http://www.spectrumhealth.org/covid19" target="_blank">Spectrum
+                                            Health</a></li>
+                                    <li><a href="http://www.mercyhealth.com/health-and-wellness/covid-19/"
+                                            target="_blank">Mercy Health Saint Marys</a></li>
+                                    <li><a href="http://metrohealth.net/covid-19-updates/" target="_blank">Metro Health
+                                            Grand Rapids</a></li>
+                                </ul>
+                                <p>Information provided by the Michgian Dept of Health and Human Services COVID19
+                                    Response Team regarding additional resources:</p>
+                                <ul class="list-group pl-2">
+                                    <li>If you are feeling anxious or looking for mental health and wellness resources,
+                                        visit <a href="https://www.Michigan.gov/StayWell"
+                                            target="_blank">www.Michigan.gov/StayWell </a>for hotlines, texting
+                                        resources, and mindfulness tools.</li>
+                                    <li>To find resources in your community and sign up for assistance programs, go to
+                                        <a href="https://www.Michigan.gov/MIBridges"
+                                            target="_blank">www.Michigan.gov/MIBridges</a>.</li>
+                                    <li>For additional help locating food, housing, childcare, and other community
+                                        services, call 2-1-1 at (844) 587-2485 or visit <a href=""
+                                            target="_blank">www.mi211.org</a>.</li>
+                                    <li>You can also call the <strong>Michigan Department of Health and Human Services
+                                            COVID-19 public hotline at 888-535-6136.</strong> The hotline is open Monday
+                                        to Friday from 8 a.m. to 5 p.m.</li>
+                                </ul>
+                            </section>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto bg-beige">
+            <header class="container text-center">
+                <h2>Patient Centered-Medical Healthcare</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto text-center bg-beige ruler">
+            <div class="col mx-auto my-4 text-center">
+                <div class="container">
+                    <article class="mt-4">
+                        <section class="my-5">
+                            <p class="max-characters">
+                                At Family Medicine Specialists we strive to meet your individual and unique healthcare
+                                needs. Our team is made up of doctors, physician assistants/nurse practitioners, nurses,
+                                medical assistants and administrative personnel who work for you.
+                                We embrace the Patient-Centered Medical Home model of care. By this, we see our medical
+                                practice as a place where health needs are met primarily and in a way that patients are
+                                well-known, providing care from different sources and at different levels. Recognizing
+                                that there are times when more specialized health care is needed, we pride ourselves on
+                                working closely with and referring to the best specialty care available.
+                                Here at FMS we value the principals of communication, service and availability as
+                                pillars in the care that we provide. Thank you for letting us provide the primary
+                                medical care for you and your family.
+                            </p>
+                            <span class="patient-centered">For more on the Patient-Centered Medical Home, click the image below.</span>
+                        </section>
+                        <footer class="mx-auto text-center">
+                            <a href="#"><img data-src="./assets/images/patient-centered-medical-home.png" border="0"
+                                    class="lazy" alt="patient centered medical icon"
+                                    title="patient centered medical information" /></a>
+                        </footer>
+                    </article>
+                </div>
+            </div>
+        </div>
+        <!-- pumpkin contest -->
+        <div class="row w-100 mx-auto bg-beige">
+            <section class="container mt-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <figure class="mx-auto text-center">
+                            <figcaption class="mx-auto mb-4 text-center">
+                                <h4 class="pt-4">Pumpkin Contest</h4>
+                            </figcaption>
+                            <img class="lazy figure-img img-fluid h-75 mx-auto img-fig"
+                                data-src="/wp-content/uploads/2020/11/pumpkins.jpeg" alt="pumpkin contest"
+                                title="October Pumpkin Contest"> <br />
+                        </figure>
+                    </div>
+                    <div class="col-lg-6">
+                        <figure class="mx-auto text-center">
+                            <figcaption class="mx-auto mb-4 text-center">
+                                <h4 class="pt-4">Winning Team with 'Finding Nemo'</h4>
+                            </figcaption>
+                            <img class="lazy figure-img img-fluid h-75 mx-auto img-fig"
+                                data-src="/wp-content/uploads/2020/11/finding-nemo.jpeg" alt="pumpkin contest winner"
+                                title="Pumpkin Contest Winner"> <br />
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div> <!-- end pumpkins row -->
+
+        <!-- Staying Strong -->
+        <div class="row w-100 mx-auto bg-beige ruler">
+
+            <figure class="mx-auto text-center">
+                <img data-src="/wp-content/uploads/2020/04/staying-strong-640x480.png" class="lazy img-fluid mx-auto"
+                    alt="Staying Strong During Covid-19" title="We Are Staying Strong During Covid-19">
+                <figcaption class="my-2">We Are Staying Strong During The Covid-19 Pandemic!</figcaption>
+            </figure>
+
+        </div>
+        <div class="row w-100 mx-auto text-center bg-beige">
+            <header class="container text-center">
+                <h2 class="resource-header">Community Resource Agencies</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto bg-beige ruler">
+            <div class="container">
+                <div class="col-lg-6 mx-auto">
+                    <header>
+                        <p style="font-size: 1.5em;">
+                            Search for free or reduced cost services like medical care,
+                            food, job training, and more.
+                        </p>
+                    </header>
+                    
+                        <a href="https://findhelp.org/" class="text-decoration-none" style="color: #ff0000; font-size: 1.25em;"
+                                title="findhelp.org formally aunt bertha">findhelp.org (formally aunt bertha)</a>
+                                <br />
+                        <a href="tel:+211" style="color: #ff0000; font-size: 1.25em;">2-1-1</a>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-100 mx-auto text-center bg-beige">
+            <header class="container text-center">
+                <h2>Patient Portal</h2>
+            </header>
+        </div>
+        <div class="row w-100 mx-auto text-center bg-beige">
+            <section class="container mx-auto text-center">
+                <div class="card text-center my-4 border-0">
+                    <div class="card-body bg-beige hoverable">
+                        <!-- <h5 class="card-title">Patient Portal</h5> -->
+                        <p class="card-text">Click To Access Our Patient Portal</p>
+                        <a href="https://14507.portal.athenahealth.com/" class="btn scale"><img
+                                data-src="/wp-content/uploads/2014/02/patient-portal-4-300x236.png"
+                                class="lazy img-fluid" alt="click to access patient portal"
+                                title="click to access patient portal"></a>
+                    </div>
+                    <div class="card-footer text-muted d-none"></div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="row w-100 mx-auto align-items-center bg-beige">
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card bg-beige border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Providers</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/providers" class="btn mx-auto"><i
+                                    class="fas fa-user-friends fa-7x"></i></a>
+                            <p class="card-text mt-3">Learn More About Our Providers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card bg-beige border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Health Hub</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/category/the-health-hub/" class="btn mx-auto"><i
+                                    class="fas fa-heart fa-7x"></i></a>
+                        </div>
+                        <p class="card-text mt-3">Read Tips On Our Health Hub</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mx-auto my-5">
+                <div class="card bg-beige border-0">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Our Latest News</h5>
+                        <div class="container mx-auto text-center">
+                            <a href="/news" class="btn "><i class="far fa-newspaper fa-7x"></i></a>
+                        </div>
+                        <p class="card-text mt-3">Read All About Our Latest Updates And News</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto desktop-spacer d-flex bg-white justify-content-center align-items-center">
+            <div class="container">
+                <section class="mx-auto text-center">
+                    <header>
+                        <h4>Proudly Serving The Grand Rapids Michigan Area!</h4>
+                    </header>
+                </section>
+            </div>
+        </div>
+        <div class="row w-100 mx-auto bg-white text-center map-container">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.2658613976155!2d-85.68937368509424!3d43.01479090149533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819aeab1e46206b%3A0x19b278fc27017957!2s721%203%20Mile%20Rd%20NW%2C%20Grand%20Rapids%2C%20MI%2049544!5e0!3m2!1sen!2sus!4v1604590760600!5m2!1sen!2sus" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <!-- contact us-->
+        <div class="row w-100 mx-auto pt-5 pb-0 mb-0 bg-white text-center">
+            <div class="col-lg-9 mx-auto">
+                <h3>Call us at <a href="tel:+16166473770">(616) 647-3770</a> to schedule a new patient consultation
+                    today.</h3>
+            </div>
+            <div class="col-lg-3 mx-auto"> <a href="tel:+16166473770" class="btn btn-primary" role="button">CONTACT US</a></div>
+
+        </div> <!-- end contact us -->
+        <!-- footer section-->
+        <footer class="d-block h-100">
+            <div class="row d-block w-100 text-center mx-auto mt-5 py-5 footer-light">
+                <div class="row w-100 mx-auto">
+                    <div class="col text-left text-white px-5">
+                        <h3 class="pb-3">Proudly Serving Grand Rapids Michigan!</h3>
+                        <p>At Family Medicine Specialists we strive to meet your individual and unique healthcare needs.
+                            Our team is made up of doctors, physician assistants/nurse practitioners, nurses, medical
+                            assistants and administrative personnel who work for you.</p>
+                        <p>We embrace the Patient-Centered Medical Home model of care. By this, we see our medical
+                            practice as a place where health needs are met primarily and in a way that patients are
+                            well-known, providing care from different sources and at different levels. Recognizing that
+                            there are times when more specialized health care is needed, we pride ourselves on working
+                            closely with and referring to the best specialty care available.</p>
+                        <p> Here at FMS we value the principals of communication, service and availability as pillars in
+                            the care that we provide. Thank you for letting us provide the primary medical care for you
+                            and your family.</p>
+                    </div>
+                    <div class="col pl-5">
+                        <div class="row w-100 mx-auto pb-5">
+                            <div class="d-block footer-lg-contact text-left">
+                                <span class="text-left">
+                                    SERVICE AREA:
+                                </span>
+                                <span class="d-block text-white">Grand Rapids Michigan</span>
+                            </div>
+                        </div>
+                        <div class="row w-100 mx-auto pb-5 text-left">
+                            <div class="footer-lg-contact">
+                                <span class="d-block text-left pl-0">
+                                    CONTACT:
+                                </span>
+                                <div class="row w-100 text-left">
+                                    <div class="col-4"><span class="d-block text-white py-3">
+                                            Phone: </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="d-block text-white py-3"><a href="tel:+16166473770"
+                                                class="btn btn-outline-light btn-sm ml-3">(616) 647-3770</a>
+                                        </span>
+                                    </div>
+                                </div>
+                                <!-- fax number -->
+                                <div class="row w-100 text-left">
+                                    <div class="col-4"><span class="d-block text-white">
+                                            Fax: </span>
+                                    </div>
+                                    <div class="col-8">
+                                        <span class="d-block text-white">
+                                            <a href="#" class="btn btn-outline-light btn-sm ml-3">(616) 647-3776</a>
+                                        </span>
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                        <div class="row w-100 mx-auto pb-5">
+                            <div class="d-block footer-lg-contact text-left">
+                                <span class="text-left">
+                                    ADDRESS:
+                                </span>
+                                <span class="d-block text-white">721 3 Mile Rd NW #200</span>
+                                <span class="d-block text-white">Grand Rapids, Michigan 49544</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-block w-100 mx-auto p-5 footer-dark">
+                <div class="container w-100 text-white text-center">
+                    Copyright © <span id="year"></span>
+                    <script async
+                        defer>document.getElementById('year').textContent = (new Date().getFullYear())</script>
+                    | Website developed & hosted by <a href="https://schrader.co"
+                        class="text-danger text-decoration-none" target="blank">Schrader Web Solutions</a>
+                </div>
+            </div>
+        </footer>
+    </div> <!-- end wrapper / container -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/lazyLoad.js"></script>
+    <script>
+        const url = location.pathname;
+        const links = document.querySelectorAll('li.nav-item > a');
+        console.log(url);
+        console.log(links);
+        links.forEach((link) => {
+            if (link.pathname === url) {
+                link.parentElement.classList.toggle('custom-active');
+            }
+        })
+    </script>
+
+</body>
+
+</html>
