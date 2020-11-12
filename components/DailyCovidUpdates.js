@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export const Covid = () => (
   <div className="row w-100 mx-auto bg-beige ruler">
     <div className="container">
@@ -8,7 +10,11 @@ export const Covid = () => (
             <span>
               Please refer to the Kent County Health Department for the most up to date information
               at
-              <a href="https://www.accesskent.com/Health/coronavirus.htm" target="_blank">
+              <a
+                href="https://www.accesskent.com/Health/coronavirus.htm"
+                target="_blank"
+                rel="noreferrer"
+              >
                 www.accesskent.com/coronavirus
               </a>
               <br />
@@ -84,7 +90,11 @@ export const Covid = () => (
                   tested through Saint Mary’s or Spectrum Health by appointment.
                 </li>
                 <li>
-                  <a href="www.accesskent.com/Health/covid-19-testing.htm" target="_blank">
+                  <a
+                    href="www.accesskent.com/Health/covid-19-testing.htm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     www.accesskent.com/Health/covid-19-testing.htm
                   </a>
                   <ul>
@@ -95,7 +105,7 @@ export const Covid = () => (
                   </ul>
                 </li>
                 <li>
-                  <a href="https://www.michigan.gov/cornavirus" target="_blank">
+                  <a href="https://www.michigan.gov/cornavirus" target="_blank" rel="noreferrer">
                     www.michigan.gov/cornavirus
                   </a>
                   Click on “find a test site”
@@ -107,7 +117,7 @@ export const Covid = () => (
                   </ul>
                 </li>
                 <li>
-                  <a href="https://www.spectrumhealth.org/covid19" target="_blank">
+                  <a href="https://www.spectrumhealth.org/covid19" target="_blank" rel="noreferrer">
                     www.spectrumhealth.org/covid19
                   </a>
                   You can schedule yourself a test at Spectrum Health through their COVID19
@@ -158,6 +168,7 @@ export const Covid = () => (
                       <a
                         href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html "
                         target="_blank"
+                        rel="noreferrer"
                       >
                         https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/quarantine.html
                       </a>
@@ -172,14 +183,14 @@ export const Covid = () => (
 
             <div className="row w-100 mx-auto bg-beige">
               <figure className="mx-auto text-center">
-                <img
-                  data-src="/wp-content/uploads/2020/04/staying-strong-640x480.png"
-                  className="lazy img-fluid mx-auto"
-                  alt="Staying Strong During Covid-19"
-                  title="We Are Staying Strong During Covid-19"
+                <Image
+                  className="img-fluid mx-auto"
+                  width={640}
+                  height={480}
+                  src="/wp-content/uploads/2020/04/staying-strong-640x480.png"
                 />
                 <figcaption className="my-2">
-                  'We Are Staying Strong During The Covid-19 Pandemic!'
+                  {"We Are Staying Strong During The Covid-19 Pandemic!"}
                 </figcaption>
               </figure>
             </div>
@@ -240,6 +251,7 @@ export const Covid = () => (
                   <a
                     href="https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     https://www.cdc.gov/coronavirus/2019-ncov/if-you-are-sick/steps-when-sick.html
                   </a>
@@ -250,7 +262,7 @@ export const Covid = () => (
                 include:
               </p>
               <ul className="list-group pl-2">
-                <li>Fever (>100.4) or chills</li>
+                <li>Fever ({">"}100.4) or chills</li>
                 <li>Body aches, headache</li>
                 <li>Sore throat, congestion, runny nose</li>
                 <li>Loss or change in sense of taste or smell</li>
@@ -276,22 +288,30 @@ export const Covid = () => (
               </header>
               <ul>
                 <li>
-                  <a href="http://www.accesskent.com/Health/coronavirus.htm" target="_blank">
+                  <a
+                    href="http://www.accesskent.com/Health/coronavirus.htm"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Kent County Health Dept
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.cdc.gov/coronavirus/2019-nCoV/index.html" target="_blank">
+                  <a
+                    href="http://www.cdc.gov/coronavirus/2019-nCoV/index.html"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     CDC
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.michigan.gov/coranvirus" target="_blank">
+                  <a href="http://www.michigan.gov/coranvirus" target="_blank" rel="noreferrer">
                     State Of Michigan
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.spectrumhealth.org/covid19" target="_blank">
+                  <a href="http://www.spectrumhealth.org/covid19" target="_blank" rel="noreferrer">
                     Spectrum Health
                   </a>
                 </li>
@@ -299,12 +319,17 @@ export const Covid = () => (
                   <a
                     href="http://www.mercyhealth.com/health-and-wellness/covid-19/"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Mercy Health Saint Marys
                   </a>
                 </li>
                 <li>
-                  <a href="http://metrohealth.net/covid-19-updates/" target="_blank">
+                  <a
+                    href="http://metrohealth.net/covid-19-updates/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Metro Health Grand Rapids
                   </a>
                 </li>
@@ -317,14 +342,14 @@ export const Covid = () => (
                 <li>
                   If you are feeling anxious or looking for mental health and wellness resources,
                   visit
-                  <a href="https://www.Michigan.gov/StayWell" target="_blank">
+                  <a href="https://www.Michigan.gov/StayWell" target="_blank" rel="noreferrer">
                     www.Michigan.gov/StayWell{" "}
                   </a>
                   for hotlines, texting resources, and mindfulness tools.
                 </li>
                 <li>
                   To find resources in your community and sign up for assistance programs, go to
-                  <a href="https://www.Michigan.gov/MIBridges" target="_blank">
+                  <a href="https://www.Michigan.gov/MIBridges" target="_blank" rel="noreferrer">
                     www.Michigan.gov/MIBridges
                   </a>
                   .
@@ -332,7 +357,7 @@ export const Covid = () => (
                 <li>
                   For additional help locating food, housing, childcare, and other community
                   services, call 2-1-1 at (844) 587-2485 or visit
-                  <a href="" target="_blank">
+                  <a href="" target="_blank" rel="noreferrer">
                     www.mi211.org
                   </a>
                   .

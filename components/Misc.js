@@ -52,12 +52,6 @@ export const Misc = () => (
                 height={300}
                 src="/wp-content/uploads/2014/02/patient-portal-4-300x236.png"
               />
-              {/* <img
-                data-src="/wp-content/uploads/2014/02/patient-portal-4-300x236.png"
-                className="lazy img-fluid"
-                alt="click to access patient portal"
-                title="click to access patient portal"
-              /> */}
             </a>
           </div>
           <div className="card-footer text-muted d-none"></div>
@@ -120,11 +114,11 @@ export const Misc = () => (
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.2652960950663!2d-85.68949588426409!3d43.01480280149315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8819aeab1e46206b%3A0x173857b8283cb76f!2sFamily%20Medicine%20Specialists%20PC!5e0!3m2!1sen!2sus!4v1604599686225!5m2!1sen!2sus"
         width="100%"
         height="600"
-        frameborder="0"
+        frameBorder="0"
         style={{ border: 0 }}
-        allowfullscreen=""
+        allowFullScreen=""
         aria-hidden="false"
-        tabindex="0"
+        tabIndex="0"
       ></iframe>
     </div>
   </>
